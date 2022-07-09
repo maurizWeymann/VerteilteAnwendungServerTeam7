@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jun 28 14:25:03 2022
+'''
+Intalliert alle nowendigen Pakete
+    pip install -r requirements.txt
+    
+Erzeugt requirements.txt
+python -m pip freeze > requirements.txt
 
-@author: 49177
-"""
+API Explanation
+https://rapidapi.com/apidojo/api/transfermarket
+
+'''
 
 from cmath import log
 from distutils.log import error
@@ -206,7 +212,7 @@ async def create_question(question: PutQuestion, response: Response):
 V Antwort(en) hochladen
 '''
 @app.put("/api/v1/answer")
-async def add_anser(answer: PutAnswer, response: Response):
+async def add_answer(answer: PutAnswer, response: Response):
     pass
 
 '''
